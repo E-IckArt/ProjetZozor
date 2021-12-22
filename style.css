@@ -1,0 +1,299 @@
+/* Style police */
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Marvel&family=Playball&display=swap");
+
+/* Css rules to specify families
+
+font-family: 'Acme', sans-serif;
+font-family: 'Marvel', sans-serif;
+font-family: 'Playball', cursive;
+*/
+
+/* Reset du BODY */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Marvel", sans-serif;
+  font-size: larger;
+  color: #111111;
+  background-color: #e9e4d6ef;
+}
+
+/* header */
+
+header {
+  margin: 1rem 1.5rem;
+  /*height: 10vh;*/
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.logo-title {
+  display: flex;
+  width: 40vh;
+  gap: 0 1vw;
+}
+
+header div h1,
+header div h2 {
+  margin: 0;
+  font-family: "Playball", cursive;
+  line-height: 1em;
+  text-align: right;
+}
+
+header div h2 {
+  font-weight: 400;
+  font-size: medium;
+}
+
+header img.logo {
+  width: 45px;
+  height: 45px;
+}
+
+/* menu de navigation */
+
+header > nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+header > nav > ul > li {
+  display: inline;
+  list-style-type: none;
+
+  margin-left: 1.5em;
+  font-size: 1.5rem;
+}
+
+header > nav > ul > li > a {
+  text-decoration: none;
+  color: #423485;
+}
+
+.page_actuelle::before {
+  content: "🐾";
+}
+
+header > nav > ul > li > a:hover {
+  color: crimson;
+  font-weight: bold;
+}
+
+header > nav > ul > li > a:hover::before {
+  content: "🐾";
+}
+
+/* MAIN */
+
+main {
+  margin: 1rem 1.5rem;
+  padding: 1rem;
+}
+
+h2 {
+  font-family: "Acme", sans-serif;
+}
+
+/* BANNIERE */
+.banniere {
+  height: auto;
+  width: auto;
+}
+
+figure {
+  margin: 0;
+}
+
+.img-banniere {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin: 0 px;
+  -webkit-box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.8);
+}
+
+figcaption {
+  background-color: rgba(5, 5, 5, 0.548);
+  color: white;
+  font-size: 0.7em;
+  border-radius: 0 0 5px 5px;
+  height: 35px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+  position: relative;
+  bottom: 39px;
+}
+
+.banniere > button {
+  color: white;
+  background: rgb(249, 249, 251);
+  background: linear-gradient(
+    180deg,
+    rgba(249, 249, 251, 1) 0%,
+    rgba(121, 9, 32, 1) 17%,
+    rgba(106, 8, 28, 1) 69%
+  );
+  border: solid 1px rgb(83, 4, 4);
+  border-radius: 5px;
+  display: flex;
+  height: 25px;
+  flex-flow: row wrap;
+  padding: 5px;
+  position: relative;
+  height: 25px;
+  bottom: 69px;
+  right: -32rem;
+}
+
+.banniere > button > a {
+  text-decoration: none;
+}
+
+/* TEXTE DE LA SECTION MAIN */
+
+.main-section {
+  margin: 2rem 0 0 0;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0 1vw;
+}
+
+/* section -ARTICLE- */
+
+.article {
+  width: 65vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.article-title {
+  width: 60vw;
+  display: flex;
+  margin: 0;
+}
+
+.article img {
+  width: 45px;
+  height: 45px;
+  float: left;
+}
+
+.article p {
+  margin: 2vh 2vw 2vh 0;
+  text-align: justify;
+}
+
+/* section -ASIDE- */
+
+.aside {
+  width: 20vw;
+  margin: 0;
+  color: white;
+  background-color: rgb(77, 72, 72);
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 20px 10px #fbfffd;
+  box-shadow: 0px 0px 20px 10px #fbfffd;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.aside .zozor-classe {
+  width: 40%;
+  height: auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 15px 1px #fbfffd;
+  box-shadow: 0px 0px 15px 1px #fbfffd;
+}
+
+.aside h2 {
+  text-align: center;
+  padding: 0 0 10px 0;
+}
+
+.aside p {
+  margin: 2vh 2vw 0 2vw;
+  text-align: justify;
+}
+
+.icon-lien-reseaux {
+  margin-top: 1.5rem;
+  padding: 2px;
+}
+
+.facebook,
+.twitter,
+.vimeo,
+.flickr,
+.rss {
+  margin: 3px;
+}
+/* FOOTER */
+
+footer {
+  margin: 1rem 1.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+footer .twitt h2,
+footer .photos h2,
+footer .amis h2 {
+  text-align: center;
+  max-height: 25vh;
+  padding-bottom: 2rem;
+}
+
+footer .twitt {
+  width: 30vw;
+  max-height: 25vh;
+}
+
+footer .photos {
+  width: 30vw;
+  max-height: 25vh;
+}
+
+footer .footer-img {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  justify-items: center;
+  max-height: 25vh;
+}
+
+.footer-img img {
+  border: solid 1px rgb(77, 72, 72);
+}
+
+footer .amis {
+  width: 30vw;
+  max-height: 25vh;
+}
+
+footer .amis .list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+footer ul {
+  margin-top: 0;
+  list-style-type: none;
+}
