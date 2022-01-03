@@ -194,7 +194,7 @@ figcaption {
 }
 
 .article p {
-  margin: 2vh 2vw 2vh 0;
+  margin: 1vh 2vw 1vh 0;
   text-align: justify;
 }
 
@@ -234,7 +234,11 @@ figcaption {
 
 .icon-lien-reseaux {
   margin-top: 1.5rem;
-  padding: 2px;
+  padding: 3px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  column-gap: 5px;
 }
 
 .facebook,
@@ -247,19 +251,20 @@ figcaption {
 /* FOOTER */
 
 footer {
+  height: 22vh;
   margin: 1rem 5rem;
   padding: 1rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  gap: 0 5px;
 }
 
 footer .twitt h2,
 footer .photos h2,
 footer .amis h2 {
   text-align: center;
-  max-height: 25vh;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
 }
 
 footer .twitt {
@@ -298,4 +303,14 @@ footer .amis .list {
 footer ul {
   margin-top: 0;
   list-style-type: none;
+}
+
+/* Propriétés CSS pour les écrans moins grands */
+
+@media all and (max-width: 1024px) /*Pour tous les écrans,
+  si la largeur de la fenêtre ne dépasse pas 1024px,
+  alors exécuter les règles CSS suivantes*/ {
+  body {
+    width: auto;
+  }
 }
