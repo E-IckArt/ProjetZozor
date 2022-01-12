@@ -1,4 +1,7 @@
 # Test : 1er fichier gitignore
 *.txt
 !README.txt
+*.jpeg
+*.jpg
+*.png
 
